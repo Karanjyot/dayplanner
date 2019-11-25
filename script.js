@@ -1,6 +1,8 @@
-init();
+
 
 var arr =["","","","","","","","","",""]
+
+init();
 var a = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#todaysdate").html(a) 
 
