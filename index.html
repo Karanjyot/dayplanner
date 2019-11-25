@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day Planner</title>
+
+    <link rel ="stylesheet" type="text/css" href="./reset.css">
+    <link rel ="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moment@2.8.1/moment.js"></script>
+        
+</head>
+
+<body>
+
+    <div class="alert alert-primary" role="alert">
+        <div class="jumbotron">
+            <h1 class="display-4" id="h1Jumbotron">Day Planner</h1>
+            <p id="todaysdate"></p>
+        </div>
+
+    </div>
+
+   
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time9">9AM</span>
+        <input type="text" id= "input1" class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="9">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save1" type="button" id="button-addon2 ">Save</button>
+        </div>
+    </div>
+
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time10">10AM</span>
+        <input type="text" id= "input2"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="10">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save2" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time11">11AM</span>
+        <input type="text" id= "input3" class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="11">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save3" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time12">12PM</span>
+        <input type="text" id= "input4"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="12">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save4" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time1">1PM</span>
+        <input type="text" id= "input5"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="13">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save5" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time2">2PM</span>
+        <input type="text" id= "input6"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="14">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save6" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time3">3PM</span>
+        <input type="text" id= "input7"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="15">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save7" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="time4">4PM</span>
+        <input type="text" id= "input8"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="16">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save8" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+
+    <div class="input-group mb-3" >
+        <span class="input-group-text" id="time5">5PM</span>
+        <input type="text" id= "input9"class="form-control" placeholder="To do" aria-label="Recipient's username"
+            aria-describedby="button-addon2" data-value ="20">
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary save9" type="button" id="button-addon2">Save</button>
+        </div>
+    </div>
+
+
+    <script src ="./script.js"></script>
+
+</body>
+
+</html>
