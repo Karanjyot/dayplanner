@@ -1,12 +1,11 @@
 
-
 var arr =["","","","","","","","","",""]
 
-init();
+
 var a = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#todaysdate").html(a) 
 
-
+init();
 var now = moment();
 var time = now.hour()
 //var el = document.querySelector('.form-control');
