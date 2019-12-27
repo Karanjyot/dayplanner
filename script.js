@@ -1,13 +1,22 @@
 
 var arr =["","","","","","","","","",""]
 
+init();
+
+
+var time = now.hour()
+function timer(){
 
 var a = moment().format('MMMM Do YYYY, h:mm:ss a');
-$("#todaysdate").html(a) 
-
-init();
+$("#todaysdate").html(a)
+time=now.hour() 
 var now = moment();
-var time = now.hour()
+
+}
+
+timer()
+
+
 //var el = document.querySelector('.form-control');
 //var data = el.getAttribute('data-value');
 
