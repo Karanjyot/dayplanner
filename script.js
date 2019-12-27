@@ -2,21 +2,12 @@
 var arr =["","","","","","","","","",""]
 
 init();
-
-
-var time = now.hour()
-function timer(){
-
 var a = moment().format('MMMM Do YYYY, h:mm:ss a');
-$("#todaysdate").html(a)
-time=now.hour() 
+$("#todaysdate").html(a) 
+
+
 var now = moment();
-
-}
-
-timer()
-
-
+var time = now.hour()
 //var el = document.querySelector('.form-control');
 //var data = el.getAttribute('data-value');
 
@@ -261,4 +252,3 @@ $(".save9").on("click", function () {
     getInputValue9()
     
 });
-
