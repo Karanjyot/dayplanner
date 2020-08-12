@@ -1,5 +1,5 @@
 
-var arr =["","","","","","","","","",""]
+var arr =["","","","","","","","","","","","","","","","","","",""]
 
 init();
 var a = moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -30,11 +30,49 @@ if (getToDo !== null) {
     $("#input7").val(arr[6])
     $("#input8").val(arr[7])
     $("#input9").val(arr[8])
+    $("#input5am").val(arr[9])
+    $("#input6am").val(arr[10])
+    $("#input7am").val(arr[11])
+    $("#input8am").val(arr[12])
+    $("#input6pm").val(arr[13])
+    $("#input7pm").val(arr[14])
+    $("#input8pm").val(arr[15])
+    $("#input9pm").val(arr[16])
+    $("#input10pm").val(arr[17])
+    $("#input11pm").val(arr[18])
+
     }
 
 
 //function to adjust css styles based on time
 function pusharr(){
+    if(time === 5) {
+        $("#time5am").css("background-color", "red")   
+    }else if (time < 5){
+        $("#time5am").css("background-color", "green") 
+    }
+    
+    if(time === 6) {
+
+        $("#time6am").css("background-color", "red") 
+    }else if (time < 6){
+        $("#time6am").css("background-color", "green") 
+    }
+    
+    
+    if(time === 7) {
+
+        $("#time7am").css("background-color", "red") 
+    }else if (time < 7){
+        $("#time7am").css("background-color", "green") 
+    } 
+    
+    if(time === 8) {
+
+        $("#time8am").css("background-color", "red") 
+    }else if (time < 8){
+        $("#time8am").css("background-color", "green") 
+    }
 
     if(time === 9) {
         $("#time9").css("background-color", "red")   
@@ -101,6 +139,49 @@ function pusharr(){
         $("#time5").css("background-color", "green") 
     }
 
+       
+    if(time === 18) {
+
+        $("#time6pm").css("background-color", "red") 
+    }else if (time < 18){
+        $("#time6pm").css("background-color", "green") 
+    }
+
+    if(time === 19) {
+
+        $("#time7pm").css("background-color", "red") 
+    }else if (time < 19){
+        $("#time7pm").css("background-color", "green") 
+    }
+
+    if(time === 20) {
+
+        $("#time8pm").css("background-color", "red") 
+    }else if (time < 20){
+        $("#time8pm").css("background-color", "green") 
+    }
+
+    if(time === 21) {
+
+        $("#time9pm").css("background-color", "red") 
+    }else if (time < 21){
+        $("#time9pm").css("background-color", "green") 
+    }
+
+    
+    if(time === 22) {
+
+        $("#time10pm").css("background-color", "red") 
+    }else if (time < 22){
+        $("#time10pm").css("background-color", "green") 
+    }
+
+    if(time === 23) {
+
+        $("#time11pm").css("background-color", "red") 
+    }else if (time < 23){
+        $("#time11pm").css("background-color", "green") 
+    }
 }
 
 pusharr()
@@ -193,6 +274,108 @@ function getInputValue9() {
 
 }
 
+function getInputValue10() {
+    
+    var inputVal = $("#input5am").val();
+    arr[9]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+
+function getInputValue11() {
+    
+    var inputVal = $("#input6am").val();
+    arr[10]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue12() {
+    
+    var inputVal = $("#input7am").val();
+    arr[11]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue13() {
+    
+    var inputVal = $("#input8am").val();
+    arr[12]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue14() {
+    
+    var inputVal = $("#input6pm").val();
+    arr[13]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue15() {
+    
+    var inputVal = $("#input7pm").val();
+    arr[14]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue16() {
+    
+    var inputVal = $("#input8pm").val();
+    arr[15]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue17() {
+    
+    var inputVal = $("#input9pm").val();
+    arr[16]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+
+function getInputValue18() {
+    
+    var inputVal = $("#input10pm").val();
+    arr[17]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
+function getInputValue19() {
+    
+    var inputVal = $("#input11pm").val();
+    arr[18]=inputVal
+
+    
+    localStorage.setItem("todo", JSON.stringify(arr));
+
+}
+
 
 // on click functions to safe input values
 
@@ -250,5 +433,56 @@ $(".save8").on("click", function () {
 $(".save9").on("click", function () {
 
     getInputValue9()
+    
+});
+
+$(".save5am").on("click", function () {
+
+    getInputValue10()
+    
+});
+$(".save6am").on("click", function () {
+
+    getInputValue11()
+    
+});
+$(".save7am").on("click", function () {
+
+    getInputValue12()
+    
+});
+$(".save8am").on("click", function () {
+
+    getInputValue13()
+    
+});
+$(".save6pm").on("click", function () {
+
+    getInputValue14()
+    
+});
+$(".save7pm").on("click", function () {
+
+    getInputValue15()
+    
+});
+$(".save8pm").on("click", function () {
+
+    getInputValue16()
+    
+});
+$(".save9pm").on("click", function () {
+
+    getInputValue17()
+    
+});
+$(".save10pm").on("click", function () {
+
+    getInputValue18()
+    
+});
+$(".save11pm").on("click", function () {
+
+    getInputValue19()
     
 });

@@ -14,12 +14,14 @@
 
 .btn {
 
-    background-color:#007bff !important;
+    /* background-color:#007bff !important; */
+    background-color:rgb(255, 102, 153) !important;
     color:white !important;
 }
 
 .alert {
 
-background-color:#007bff !important;
+/* background-color:#007bff !important; */
+background-color:rgb(255, 102, 153) !important;
 }
 
